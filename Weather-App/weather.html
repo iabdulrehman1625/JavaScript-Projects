@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/clouds.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="weather-card">
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+      <i class="fas fa-moon"></i>
+    </button>
+    <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+    <div>
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+    <div class="result" id="weatherResult"></div>
+    <div class="forecast" id="forecastResult"></div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
