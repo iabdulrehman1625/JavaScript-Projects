@@ -1,0 +1,1 @@
+# All projects in this repo are reponsive & interactive.
